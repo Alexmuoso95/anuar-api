@@ -1,1 +1,83 @@
-.idea/
+# Maven and Gradle build directories
+target/
+/target/
+/build/
+
+# IntelliJ IDEA
+/.idea
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+/.metadata
+/.recommenders
+*.pydevproject
+.project
+/.settings/
+/bin/
+/tmp/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files
+/logs/
+/*.log
+
+# Temporary files
+*.swp
+*.tmp
+*.temp
+*.pid
+
+# Spring Boot specific files
+/spring-boot-devtools.properties
+
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Configuration files
+/*.env
+
+# Ignore application configuration files containing sensitive information
+/application*.yml
+/application*.yaml
+/application*.properties
+
+# Ignore local environment settings
+.env
+
+# IDE specific
+/.idea/
+/*.iml
+*.iml
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Lombok generated files
+lombok.config
+
+# Maven
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/logs/
+*.log
+!src/main/resources/static/
+/target/

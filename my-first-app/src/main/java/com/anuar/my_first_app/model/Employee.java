@@ -6,10 +6,7 @@ public class Employee {
     private String name;
     private String position;
 
-    public Employee(Long id, String name, String position) {
-        this.id = id;
-        this.name = name;
-        this.position = position;
+    public Employee() {
     }
 
     public Long getId() {
