@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,16 @@ import java.util.List;
 public class ClientControllerImpl {
 
     private List<Client> clients = new ArrayList<>();
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Client> getClientById(@PathVariable Long id) {
+        for (Client client : clients) {
+            if (client.getId().equals(id)) {
+                return ResponseEntity.ok(client);
+            }
+        }
+        return ResponseEntity.notFound().build();
+    }
 
     @GetMapping
     public ResponseEntity<List<Client>> getAllClients() {

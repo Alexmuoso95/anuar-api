@@ -1,5 +1,6 @@
 package com.anuar.my_first_app.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Client {
@@ -61,5 +62,4 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
-
 }
